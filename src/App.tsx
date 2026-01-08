@@ -134,17 +134,17 @@ function App() {
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="transition-transform group-hover:translate-x-1"><path d="M9 18l6-6-6-6"/></svg>
           </button>
 
-          {/* Dead Centered CTA Button */}
+          {/* Premium Dark Glassmorphism CTA - Centered on top of the hero image */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 flex justify-center">
             <a 
               href="#kontakt" 
-              className="bg-white/95 backdrop-blur-md border border-[#003324]/10 px-10 md:px-16 py-5 md:py-6 rounded-full flex items-center space-x-4 md:space-x-8 hover:bg-[#A87B00] hover:text-white transition-all duration-500 shadow-[0_30px_60px_rgba(0,0,0,0.4)] group/cta scale-90 md:scale-110"
+              className="bg-[#003324]/20 backdrop-blur-2xl border border-white/20 px-10 md:px-14 py-4 md:py-5 rounded-full flex items-center space-x-4 md:space-x-6 hover:bg-[#003324]/40 hover:scale-105 transition-all duration-500 shadow-[0_25px_50px_rgba(0,0,0,0.5)] group/cta scale-90 md:scale-100"
             >
-              <span className="text-[11px] md:text-sm lg:text-base font-antonio tracking-[0.3em] uppercase font-bold text-[#003324] group-hover/cta:text-white transition-colors">
+              <span className="text-xs md:text-sm lg:text-base font-antonio tracking-[0.3em] uppercase font-bold text-white group-hover/cta:text-[#FFDD80] transition-colors">
                 Anfrage starten
               </span>
-              <div className="w-7 h-7 md:w-10 md:h-10 rounded-full border border-[#003324]/20 flex items-center justify-center group-hover/cta:border-white transition-all">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" className="md:w-5 md:h-5 transition-transform group-hover/cta:translate-x-1"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center group-hover/cta:bg-[#A87B00] group-hover/cta:border-[#A87B00] transition-all duration-500">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" className="text-white transition-transform group-hover/cta:translate-x-1"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </div>
             </a>
           </div>

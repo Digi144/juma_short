@@ -57,11 +57,11 @@ function App() {
           </div>
 
           {/* Desktop Nav Links */}
-          <nav className="hidden xl:flex items-center space-x-8 text-[10px] tracking-[0.2em] uppercase font-bold opacity-80 text-[#003324]">
+          <nav className="hidden xl:flex items-center space-x-8 text-[10px] tracking-[0.2em] uppercase font-light opacity-80 text-[#003324]">
             {navLinks.map((link) => (
-              <a key={link.name} href={link.href} className="hover:text-[#A87B00] transition-colors">{link.name}</a>
+              <a key={link.name} href={link.href} className="hover:font-bold hover:text-[#A87B00] transition-all duration-300 w-[100px] text-center">{link.name}</a>
             ))}
-            <a href="#kontakt" className="bg-[#A87B00] text-white px-6 py-2 rounded-full hover:bg-[#003324] transition-all shadow-md">Kontakt</a>
+            <a href="#kontakt" className="bg-[#A87B00] text-white px-6 py-2 rounded-full font-bold hover:bg-[#003324] transition-all shadow-md">Kontakt</a>
           </nav>
 
           {/* Animated Burger Menu Button */}
@@ -78,13 +78,13 @@ function App() {
 
         {/* Mobile Menu Overlay */}
         <div className={`fixed inset-0 bg-[#FFFFF0] z-50 flex flex-col items-center justify-center transition-all duration-500 ease-in-out ${isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none translate-y-[-20px]'}`}>
-          <nav className="flex flex-col items-center space-y-8 text-lg md:text-2xl tracking-[0.2em] uppercase font-bold text-[#003324]">
+          <nav className="flex flex-col items-center space-y-8 text-lg md:text-2xl tracking-[0.2em] uppercase font-light text-[#003324]">
             {navLinks.map((link) => (
               <a 
                 key={link.name} 
                 href={link.href} 
                 onClick={toggleMobileMenu}
-                className="hover:text-[#A87B00] transition-colors"
+                className="hover:font-bold hover:text-[#A87B00] transition-all duration-300"
               >
                 {link.name}
               </a>
@@ -92,7 +92,7 @@ function App() {
             <a 
               href="#kontakt" 
               onClick={toggleMobileMenu}
-              className="bg-[#A87B00] text-white px-10 py-4 rounded-full shadow-xl"
+              className="bg-[#A87B00] text-white px-10 py-4 rounded-full font-bold shadow-xl"
             >
               Kontakt
             </a>
